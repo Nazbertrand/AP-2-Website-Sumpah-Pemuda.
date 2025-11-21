@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokoh-tokoh Sumpah Pemuda</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: border 1s;
+         }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #toggle {
+            display: none;
+        }
+
+        .navigation {
+            background: red;
+            padding: 20px;
+            text-align: center;
+            transition: background 1s;
+        }
+
+        .navigation a {
+            color: white;
+            margin: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .togglebutton {
+            background: white;
+            color: black;
+            padding: 8px 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: background 1s, color 1s;
+        }
+
+        .togglebutton:hover {
+            background: rgb(187, 187, 187);
+            transition: background 0.3s;
+        }
+
+        h1 {
+            transition: color 1s;
+        }
+
+        h2 {
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            transition: color 1s;
+        }
+
+        .tr1 {
+            background-color: red;
+            transition: background 1s;
+        }
+
+        .tr1 th {
+            background-color: red;
+            color: black;
+            transition: background 1s, color 1s;
+        }
+
+        .tr2 {
+            background-color: white;
+            transition: background 1s;
+        }
+
+        .tr2 th {
+            color: black;
+            transition: background 1s, color 1s;
+        }
+
+        label {
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 10px;
+            background: white;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .content {
+            background: white;
+            color: black;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            transition: background 1s, color 1s;
+        }
+
+        #toggle:checked ~ .content {
+            background: black;
+            color: white;
+        }
+
+        #toggle:checked ~ .navigation {
+            background: #520707;
+        }
+
+        #toggle:checked ~ .navigation a {
+            color: white;
+        }
+
+        #toggle:checked + .navigation .togglebutton {
+            background: #000000;
+            color: white;
+        }
+
+        #toggle:checked ~ .content h1 {
+            color: white;
+        }
+
+        #toggle:checked ~ .content h2 {
+            color: white;
+        }
+
+        #toggle:checked ~ .content table,
+        #toggle:checked ~ .content th,
+        #toggle:checked ~ .content  td {
+            border: 2px solid white;
+        }
+
+        #toggle:checked ~ .content .tr1 {
+            background-color: #520707;
+        }
+
+        #toggle:checked ~ .content .tr1 th {
+            color: white;
+        }
+
+        #toggle:checked ~ .content .tr2 {
+            background-color: black;
+        }
+
+        #toggle:checked ~ .content .tr2 td,
+        #toggle:checked ~ .content .tr2 th {
+            color: white;
+        }
+
+        * {
+            transition: background 1s, color 1s, border 1s;
+        }
+
+        .nextbutton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: red;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .nextbutton:hover {
+            background: darkred;
+        }
+
+        #toggle:checked ~ .nextbutton {
+            background: #520707; 
+        }
+    </style>
+    
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <header class="navigation">
+        <label for="toggle" class="togglebutton">Dark Mode</label>
+
+        <a href="1.html">Soegondo Djojopoespito</a>
+        <a href="2.html">Wage Rudolf Supratman</a>
+        <a href="3.html">Mohammad Yamin</a>
+    </header>
+    <div class="content">
+    <img src="WIN_20251031_14_00_08_Pro.jpg" height="300px" width="508.5px">
+    <br>
+    <table>
+        <tr class="tr1">
+            <td>Nama</td>
+            <td>Kelas</td>
+            <td>Deskripsi Diri</td>
+        </tr>
+        <tr class="tr2">
+            <td>Bertrand Nicholas Butarbutar</td>
+            <td>8B/6</td>
+            <td>Saya memakai kacamata dan main biola</td>
+        </tr>
+
+        <tr class="tr2">
+            <td>Rafael Jaime Christoffer</td>
+            <td>8B/22</td>
+            <td>Saya memakai kacamata dan main piano</td>
+        </tr>
+    </table>
+    <div>
+        <h2>Dalam menyambut, hari Sumpah Pemuda. Kami akan memberi kalian biografi dari, pahlawan - pahlawan yang berjuang demi kemerdekaan bangsa Indonesia. </h2>
+    </div>
+    </div>
+
+    <a href="1.html" class="nextbutton">Next Page</a>
+
+</body>
+</html>

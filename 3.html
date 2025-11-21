@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Yamin</title>
+    <style>
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #toggle {
+            display: none;
+        }
+
+        .navigation {
+            background: red;
+            padding: 20px;
+            text-align: center;
+            transition: background 1s;
+        }
+
+        .navigation a {
+            color: white;
+            margin: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .togglebutton {
+            background: white;
+            color: black;
+            padding: 8px 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: background 1s, color 1s;
+        }
+
+        .togglebutton:hover {
+            background: rgb(187, 187, 187);
+            transition: background 0.3s;
+        }
+
+        h1 {
+            transition: color 1s;
+        }
+
+        label {
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 10px;
+            background: white;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .content {
+            background: white;
+            color: black;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            transition: background 1s, color 1s;
+        }
+
+        #toggle:checked ~ .content {
+            background: black;
+            color: white;
+        }
+
+        #toggle:checked ~ .navigation {
+            background: #520707;
+        }
+
+        #toggle:checked ~ .navigation a {
+            color: white;
+        }
+
+        #toggle:checked + .navigation .togglebutton {
+            background: #000000;
+            color: white;
+        }
+
+        #toggle:checked ~ .content h1 {
+            color: white;
+        }
+
+        .nextbutton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: red;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .nextbutton:hover {
+            background: darkred;
+        }
+
+        #toggle:checked ~ .nextbutton {
+            background: #520707; 
+        }
+
+        .prevbutton {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: red;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .prevbutton:hover {
+            background: darkred;
+        }
+
+        #toggle:checked ~ .prevbutton {
+            background: #520707;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <header class="navigation">
+        <label for="toggle" class="togglebutton">Dark Mode</label>
+        <a href="index.html">Home</a>
+        <a href="2.html">Wage Rudolf Supratman</a>
+        <a href="1.html">Soegondo Djojopoespito</a>
+    </header>
+    <div class="content">
+    <img src="moh yamin.jpg" height="300px" width="300px">
+    <h1>Mohammad Yamin</h1>
+    <p>Mohammad Yamin lahir pada 24 Agustus 1903 di Sawahlunto, Sumatra Barat. Ia adalah sastrawan dan tokoh pergerakan nasional yang berperan penting dalam Kongres Pemuda II tahun 1928. Dalam peristiwa Sumpah Pemuda, Yamin mendorong persatuan pemuda Indonesia melalui gagasan tentang satu bangsa, satu tanah air, dan satu bahasa, serta ikut merumuskan ikrar Sumpah Pemuda. Setelah itu, ia aktif dalam pemerintahan hingga wafat pada 17 Oktober 1962 di Jakarta.</p>
+    </div>
+
+    <a href="index.html" class="nextbutton">Home</a>
+    <a href="2.html" class="prevbutton">Previous Page</a>
+
+</body>
+</html>
